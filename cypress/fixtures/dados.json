@@ -1,0 +1,12 @@
+{
+    "nome": "Emily",
+    "sobrenome": "Carter",
+    "pais": "Brasil" ,
+    "endereco" : "Avenida Paulista , 456" ,
+    "cidade" : "São Paulo" ,
+    "estado" : "São Paulo" ,
+    "cep" : "01310-000" ,
+    "telefone" : "(11)91234-5678" ,
+    "email" : "emily.carter@example.com"
+
+}
