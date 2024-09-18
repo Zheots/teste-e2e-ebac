@@ -21,8 +21,8 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
       produtosPage.addProdutoCarrinho('S' , 'Blue' , 2)
       cy.get('.woocommerce-message').should('exist')
 
-      produtosPage.buscarProduto2('Ariel Roll Sleeve Sweatshirt')
-      produtosPage.addProdutoCarrinho('M' , 'Purple' , 1)
+      produtosPage.buscarProduto2('Augusta Pullover Jacket')
+      produtosPage.addProdutoCarrinho('M' , 'Orange' , 1)
       cy.get('.woocommerce-message').should('exist')
 
       produtosPage.buscarProduto2('Apollo Running Short')
