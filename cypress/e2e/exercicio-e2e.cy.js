@@ -21,7 +21,7 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
       produtosPage.addProdutoCarrinho('S' , 'Blue' , 2)
       cy.get('.woocommerce-message').should('exist')
 
-      produtosPage.buscarProduto2('Augusta Pullover Jacket')
+      produtosPage.buscarProduto2(' Augusta Pullover Jacket')
       produtosPage.addProdutoCarrinho('M' , 'Orange' , 1)
       cy.get('.woocommerce-message').should('exist')
 
@@ -37,6 +37,7 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
       cy.get('.checkout-button').click()
       cy.preencheDados(dados.nome , dados.sobrenome , dados.pais , dados.endereco , dados.cidade , dados.estado , dados.cep , dados.telefone , dados.email)
       cy.get('#place_order').should('exist')
+      cy.get('.woocommerce-notice').should('contain' , 'Obrigado. Seu pedido foi recebido.')
   });
 
 })
